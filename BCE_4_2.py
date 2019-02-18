@@ -1,5 +1,5 @@
 """
-Creates a dictionary of dictionaries from three lists: menu, meals days; and
+Creates a dictionary of dictionaries from three lists: menu, meals, days; and
 provides the answer to a query about the special of the day.
 There are two versions of the code that creates the dictionary of dictionaries, 
 labelled "Succinct verion" and "Wordy version" below. Both do essentially the
