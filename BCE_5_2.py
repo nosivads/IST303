@@ -68,8 +68,8 @@ print(rows)
 # task 12: join tables and show trainer, skill and rate
 curs.execute('SELECT trainer.name, skill.name, lesson.rate \
              FROM lesson \
-             INNER JOIN trainer ON trainer.id = lesson.trainer_id \
-             INNER JOIN skill ON skill.id = lesson.skill_id')
+             INNER JOIN trainer ON lesson.trainer_id = trainer.id \
+             INNER JOIN skill ON lesson.skill_id = skill.id')
 rows = curs.fetchall()
 print(rows)
 
